@@ -1,4 +1,8 @@
 # node-red-contrib-redis-storage
+[![npm version](https://badge.fury.io/js/node-red-contrib-redis-storage.svg)](https://badge.fury.io/js/node-red-contrib-redis-storage)
+[![dependencies Status](https://david-dm.org/allenan/node-red-contrib-redis-storage/status.svg)](https://david-dm.org/allenan/node-red-contrib-redis-storage)
+[![license](https://img.shields.io/badge/license-ISC-brightgreen.svg)](https://opensource.org/licenses/ISC)
+
 An implementation of the [Node-RED Storage API](http://nodered.org/docs/api/storage/) using Redis.
 
 This works particularly well if you want to host Node-RED on a Heroku instance, or any other provider that uses an ephemeral filesystem.
