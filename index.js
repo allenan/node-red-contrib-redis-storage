@@ -3,9 +3,8 @@ var util = require('util'),
     when = require('when')
 
 // Redis setup
-var redis = require("redis"),
-    redisURL = process.env.REDIS_URL,
-    client = redis.createClient(redisURL);
+var redis = require("redis");
+var client;
 
 // Private variables and functions
 var settings;
@@ -50,6 +49,9 @@ var redisStorage = {
     settings = _settings;
     log.info("initialized with settings:");
     log.info(util.inspect(settings));
+    // init redis client connection
+    client = redis.createClient(settings.redis);
+
     return when.promise(function(resolve,reject) {
       resolve();
     });
