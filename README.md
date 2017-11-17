@@ -21,9 +21,7 @@ redis: {
 storageModule: require("node-red-contrib-redis-storage")
 ```
 
-If you're running in a non-local environment, configure the Redis URL by setting an environment variable: `REDIS_URL`.
-
-Then, start Node-RED and all of your data will be persisted to Redis, rather than the filesystem.
+Now, start Node-RED and all of your data will be persisted to Redis, rather than the filesystem.
 
 ## Contributing
 
