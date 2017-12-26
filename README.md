@@ -15,7 +15,7 @@ Then, add the following configuration option to your `settings.js` file:
 ```javascript
 redis: {
   host: your.redis.host,
-  pass: your.redis.password,
+  password: your.redis.password,
   port: your.redis.port
 },
 storageModule: require("node-red-contrib-redis-storage")
